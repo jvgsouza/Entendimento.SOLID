@@ -1,6 +1,7 @@
 ﻿using Entendimento.SOLID._2___LSP.Solucao;
 using Entendimento.SOLID._3___PSL.Solucao;
 using Entendimento.SOLID._4___ISP.Solucao;
+using Entendimento.SOLID._5___DIP.Solucao;
 using Entendimento.SOLID.SRP.Solucao;
 
 namespace Entendimento.SOLID // Note: actual namespace depends on the project name.
@@ -69,6 +70,15 @@ namespace Entendimento.SOLID // Note: actual namespace depends on the project na
                         Console.WriteLine();
                         break;
                     case "5":
+                        var mysql = new ConexaoMySQL();
+                        var enderecoMySQL = new EnderecoRepository(mysql);
+                        Console.WriteLine(enderecoMySQL.IniciarConexao());
+                        Console.WriteLine();
+
+                        var sql = new ConexaoSQL();
+                        var enderecoSQL = new EnderecoRepository(sql);
+                        Console.WriteLine(enderecoSQL.IniciarConexao());
+                        Console.WriteLine();
                         break;
                     case "6":
                         running = false;
