@@ -34,6 +34,13 @@ namespace Entendimento.SOLID // Note: actual namespace depends on the project na
                         Console.WriteLine(usuarioService.Register(usuario));
                         break;
                     case "2":
+                        var finalizacaoEntrega = new FinalizacaoEntrega();
+                        var pedidoEntrega = new Pedido();
+                        Console.WriteLine(pedidoEntrega.Entregar(finalizacaoEntrega));
+
+                        var finalizacaoRetirada = new FinalizacaoRetirada();
+                        var pedidoRetirada = new Pedido();
+                        Console.WriteLine(pedidoRetirada.Entregar(finalizacaoRetirada));
                         break;
                     case "3":
                         break;
