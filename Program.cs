@@ -1,4 +1,5 @@
 ﻿using Entendimento.SOLID._2___LSP.Solucao;
+using Entendimento.SOLID._3___PSL.Solucao;
 using Entendimento.SOLID.SRP.Solucao;
 
 namespace Entendimento.SOLID // Note: actual namespace depends on the project name.
@@ -11,7 +12,7 @@ namespace Entendimento.SOLID // Note: actual namespace depends on the project na
             while (running == true)
             {
                 Console.WriteLine("///////////////////////////////////////////////////////////////////////////////////////");
-                Console.WriteLine("// Sobre qual princípio gostaria de aprender?                                        //");
+                Console.WriteLine("// Sobre qual princípio gostaria de ver exemplo?                                        //");
                 Console.WriteLine("// 1 - S — Single Responsiblity Principle (Princípio da responsabilidade única)      //");
                 Console.WriteLine("// 2 - O — Open-Closed Principle (Princípio Aberto-Fechado)                          //");
                 Console.WriteLine("// 3 - L — Liskov Substitution Principle (Princípio da substituição de Liskov)       //");
@@ -43,6 +44,13 @@ namespace Entendimento.SOLID // Note: actual namespace depends on the project na
                         Console.WriteLine(pedidoRetirada.Entregar(finalizacaoRetirada));
                         break;
                     case "3":
+                        var atleta = new Atleta("João", "Vôlei");
+                        var sobreAtleta = new Sobre();
+                        Console.WriteLine(sobreAtleta.Descricao(atleta));
+
+                        var jogadorFutebol = new JogadorFutebol("Victor", "Futebol");
+                        var sobreJogadorFutebol = new Sobre();
+                        Console.WriteLine(sobreJogadorFutebol.Descricao(jogadorFutebol));
                         break;
                     case "4":
                         break;
