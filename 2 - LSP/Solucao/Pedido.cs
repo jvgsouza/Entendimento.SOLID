@@ -2,7 +2,7 @@
 {
     internal class Pedido
     {
-        public string Entregar(Finalizacao finalizacao)
+        public string Entregar(IFinalizacao finalizacao)
         {
             return finalizacao.Finalizar();
         }
