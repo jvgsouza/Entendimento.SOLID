@@ -1,5 +1,6 @@
 ﻿using Entendimento.SOLID._2___LSP.Solucao;
 using Entendimento.SOLID._3___PSL.Solucao;
+using Entendimento.SOLID._4___ISP.Solucao;
 using Entendimento.SOLID.SRP.Solucao;
 
 namespace Entendimento.SOLID // Note: actual namespace depends on the project name.
@@ -33,26 +34,39 @@ namespace Entendimento.SOLID // Note: actual namespace depends on the project na
                         usuario.Senha = "123456";
 
                         Console.WriteLine(usuarioService.Register(usuario));
+                        Console.WriteLine();
                         break;
                     case "2":
                         var finalizacaoEntrega = new FinalizacaoEntrega();
                         var pedidoEntrega = new Pedido();
                         Console.WriteLine(pedidoEntrega.Entregar(finalizacaoEntrega));
+                        Console.WriteLine();
 
                         var finalizacaoRetirada = new FinalizacaoRetirada();
                         var pedidoRetirada = new Pedido();
                         Console.WriteLine(pedidoRetirada.Entregar(finalizacaoRetirada));
+                        Console.WriteLine();
                         break;
                     case "3":
                         var atleta = new Atleta("João", "Vôlei");
                         var sobreAtleta = new Sobre();
                         Console.WriteLine(sobreAtleta.Descricao(atleta));
+                        Console.WriteLine();
 
                         var jogadorFutebol = new JogadorFutebol("Victor", "Futebol");
                         var sobreJogadorFutebol = new Sobre();
                         Console.WriteLine(sobreJogadorFutebol.Descricao(jogadorFutebol));
+                        Console.WriteLine();
                         break;
                     case "4":
+                        var clt = new CLT();
+                        Console.WriteLine(clt.Inserir());
+                        Console.WriteLine();
+
+                        var pj = new PJ();
+                        Console.WriteLine(pj.Inserir());
+                        Console.WriteLine(pj.EmitirNota());
+                        Console.WriteLine();
                         break;
                     case "5":
                         break;
