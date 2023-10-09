@@ -4,7 +4,7 @@ using System.Data;
 
 namespace Entendimento.SOLID.SRP.Solucao
 {
-    internal class UsuarioRepository
+    public class UsuarioRepository
     {
         public void Register(Usuario usuario)
         {

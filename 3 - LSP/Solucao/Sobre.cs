@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID._3___PSL.Solucao
 {
-    internal class Sobre
+    public class Sobre
     {
         public string Descricao(Atleta atleta)
         {

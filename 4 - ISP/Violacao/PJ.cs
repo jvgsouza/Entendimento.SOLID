@@ -2,7 +2,7 @@
 
 namespace Entendimento.SOLID._4___ISP.Violacao
 {
-    internal class PJ : IContratoServicos
+    public class PJ : IContratoServicos
     {
         public void Inserir()
         {

@@ -2,7 +2,7 @@
 
 namespace Entendimento.SOLID._5___DIP.Solucao
 {
-    internal class ConexaoSQL : IConexaoDB
+    public class ConexaoSQL : IConexaoDB
     {
         public string Conectar()
         {

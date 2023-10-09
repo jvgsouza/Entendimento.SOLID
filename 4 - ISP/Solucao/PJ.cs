@@ -2,7 +2,7 @@
 
 namespace Entendimento.SOLID._4___ISP.Solucao
 {
-    internal class PJ : IPJ
+    public class PJ : IPJ
     {
         public string Inserir()
         {

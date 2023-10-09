@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Entendimento.SOLID.SRP.Violacao
 {
-    internal class Usuario
+    public class Usuario
     {
         public string Email { get; set; }
         public string Nome { get; set; }

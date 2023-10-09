@@ -6,7 +6,7 @@ using Entendimento.SOLID.SRP.Solucao;
 
 namespace Entendimento.SOLID // Note: actual namespace depends on the project name.
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {

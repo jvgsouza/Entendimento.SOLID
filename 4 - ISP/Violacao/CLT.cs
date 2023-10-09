@@ -2,7 +2,7 @@
 
 namespace Entendimento.SOLID._4___ISP.Violacao
 {
-    internal class CLT : IContratoServicos
+    public class CLT : IContratoServicos
     {
         public void Inserir()
         {

@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID.SRP.Solucao
 {
-    internal class EmailService
+    public class EmailService
     {
         public virtual bool ValidateEmail(string email)
         {

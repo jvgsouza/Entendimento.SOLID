@@ -2,7 +2,7 @@
 
 namespace Entendimento.SOLID._5___DIP.Solucao
 {
-    internal class EnderecoRepository : IEnderecoRepository
+    public class EnderecoRepository : IEnderecoRepository
     {
         private readonly IConexaoDB _conexao;
 

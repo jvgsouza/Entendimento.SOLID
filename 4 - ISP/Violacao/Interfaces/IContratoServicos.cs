@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID._4___ISP.Violacao.Interfaces
 {
-    internal interface IContratoServicos
+    public interface IContratoServicos
     {
         void Inserir();
         void EmitirNota();

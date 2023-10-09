@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID._4___ISP.Solucao.Interfaces
 {
-    internal interface ICLT : IContratoServicos
+    public interface ICLT : IContratoServicos
     {
     }
 }

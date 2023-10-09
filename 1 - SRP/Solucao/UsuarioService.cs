@@ -2,7 +2,7 @@
 
 namespace Entendimento.SOLID.SRP.Solucao
 {
-    internal class UsuarioService
+    public class UsuarioService
     {
         public string Register(Usuario usuario)
         {

@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID._3___PSL.Solucao
 {
-    internal class JogadorFutebol : Atleta
+    public class JogadorFutebol : Atleta
     {
         public string Nome { get; private set; }
         public string Especializacao { get; private set; }

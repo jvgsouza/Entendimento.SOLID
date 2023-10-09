@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID._4___ISP.Solucao.Interfaces
 {
-    internal interface IContratoServicos
+    public interface IContratoServicos
     {
         string Inserir();
     }

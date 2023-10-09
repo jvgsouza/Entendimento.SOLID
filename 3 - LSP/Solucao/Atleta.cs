@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID._3___PSL.Solucao
 {
-    internal class Atleta
+    public class Atleta
     {
         public Atleta(string nome, string especializacao) {
             Nome = nome;

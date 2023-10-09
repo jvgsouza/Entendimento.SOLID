@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID._2___LSP.Violacao
 {
-    internal class Pedido
+    public class Pedido
     {
         public void Finalizar(TipoFinalizacao tipoFinalizacao)
         {

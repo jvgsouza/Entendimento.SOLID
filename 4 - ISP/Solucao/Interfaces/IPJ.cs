@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID._4___ISP.Solucao.Interfaces
 {
-    internal interface IPJ : IContratoServicos
+    public interface IPJ : IContratoServicos
     {
         string EmitirNota();
     }

@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID._2___LSP.Solucao
 {
-    internal class FinalizacaoEntrega : IFinalizacao
+    public class FinalizacaoEntrega : IFinalizacao
     {
         public string Finalizar()
         {

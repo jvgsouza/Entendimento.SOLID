@@ -2,7 +2,7 @@
 
 namespace Entendimento.SOLID._4___ISP.Solucao
 {
-    internal class CLT : ICLT
+    public class CLT : ICLT
     {
         public string Inserir() 
         {
