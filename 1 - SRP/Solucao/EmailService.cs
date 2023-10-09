@@ -2,7 +2,7 @@
 {
     public class EmailService
     {
-        public virtual bool ValidateEmail(string email)
+        public bool ValidateEmail(string email)
         {
             return email.Contains("@");
         }

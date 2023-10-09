@@ -46,7 +46,7 @@ namespace Entendimento.SOLID.SRP.Violacao
             return "Usuário criado com Sucesso!";
         }
 
-        public virtual bool ValidateEmail(string email)
+        public bool ValidateEmail(string email)
         {
             return email.Contains("@");
         }
