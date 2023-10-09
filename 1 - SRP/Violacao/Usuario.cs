@@ -1,11 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entendimento.SOLID.SRP.Violacao
 {
@@ -15,9 +9,9 @@ namespace Entendimento.SOLID.SRP.Violacao
         public string Nome { get; set; }
         public string Senha { get; set; }
 
-        public string Register()
+        public string Registrar()
         {
-            if (!ValidateEmail(Email))
+            if (!ValidarEmail(Email))
                 return "Email inválido!";
 
             using (var conn = new MySqlConnection())
@@ -41,17 +35,17 @@ namespace Entendimento.SOLID.SRP.Violacao
                 cmd.ExecuteNonQuery();
             }
 
-            SendEmail(Email);
+            EnviarEmail(Email);
 
             return "Usuário criado com Sucesso!";
         }
 
-        public bool ValidateEmail(string email)
+        public bool ValidarEmail(string email)
         {
             return email.Contains("@");
         }
 
-        public string SendEmail(string email)
+        public string EnviarEmail(string email)
         {
             return $"Email enviado para {email}!";
         }

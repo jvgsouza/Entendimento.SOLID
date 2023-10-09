@@ -34,7 +34,7 @@ namespace Entendimento.SOLID // Note: actual namespace depends on the project na
                         usuario.Nome = "Teste";
                         usuario.Senha = "123456";
 
-                        Console.WriteLine(usuarioService.Register(usuario));
+                        Console.WriteLine(usuarioService.Registrar(usuario));
                         Console.WriteLine();
                         break;
                     case "2":

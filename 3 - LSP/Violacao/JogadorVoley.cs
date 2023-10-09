@@ -1,6 +1,6 @@
 ﻿namespace Entendimento.SOLID._3___PSL.Violacao
 {
-    abstract public class JogadorVoley
+    public class JogadorVoley
     {
         public string Nome { get; private set; }
         public string Especializacao { get; private set; }

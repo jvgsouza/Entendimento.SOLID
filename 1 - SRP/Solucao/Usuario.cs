@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entendimento.SOLID.SRP.Solucao
+﻿namespace Entendimento.SOLID.SRP.Solucao
 {
     public class Usuario
     {

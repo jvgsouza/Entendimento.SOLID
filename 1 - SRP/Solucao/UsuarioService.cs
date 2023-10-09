@@ -4,15 +4,15 @@ namespace Entendimento.SOLID.SRP.Solucao
 {
     public class UsuarioService
     {
-        public string Register(Usuario usuario)
+        public string Registrar(Usuario usuario)
         {
             var emailService = new EmailService();
-            if (!emailService.ValidateEmail(usuario.Email))
+            if (!emailService.ValidarEmail(usuario.Email))
                 throw new ValidationException("Email inválido!");
 
             var usuarioRepository = new UsuarioRepository();
-            usuarioRepository.Register(usuario);
-            emailService.SendEmail(usuario.Email);
+            usuarioRepository.Registrar(usuario);
+            emailService.EnviarEmail(usuario.Email);
 
             return "Usuário salvo com sucesso!";
         }

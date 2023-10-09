@@ -2,12 +2,12 @@
 {
     public class EmailService
     {
-        public bool ValidateEmail(string email)
+        public bool ValidarEmail(string email)
         {
             return email.Contains("@");
         }
 
-        public void SendEmail(string email)
+        public void EnviarEmail(string email)
         {
             Console.WriteLine($"Email enviado para {email}!");
         }
