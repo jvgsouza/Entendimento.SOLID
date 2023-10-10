@@ -1,4 +1,4 @@
-﻿namespace Entendimento.SOLID._3___PSL.Violacao
+﻿namespace Entendimento.SOLID._3___LSP.Violacao
 {
     public class JogadorVoley
     {

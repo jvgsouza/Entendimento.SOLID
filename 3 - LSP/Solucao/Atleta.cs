@@ -1,4 +1,4 @@
-﻿namespace Entendimento.SOLID._3___PSL.Solucao
+﻿namespace Entendimento.SOLID._3___LSP.Solucao
 {
     public class Atleta
     {

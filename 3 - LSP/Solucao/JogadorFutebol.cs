@@ -1,9 +1,9 @@
-﻿namespace Entendimento.SOLID._3___PSL.Solucao
+﻿namespace Entendimento.SOLID._3___LSP.Solucao
 {
     public class JogadorFutebol : Atleta
     {
-        public string Nome { get; private set; }
-        public string Especializacao { get; private set; }
+        public new string Nome { get; private set; }
+        public new string Especializacao { get; private set; }
         
         public JogadorFutebol(string nome, string especializacao) :  base(nome, especializacao)
         {

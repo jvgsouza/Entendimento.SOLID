@@ -1,5 +1,5 @@
-﻿using Entendimento.SOLID._2___LSP.Solucao;
-using Entendimento.SOLID._3___PSL.Solucao;
+﻿using Entendimento.SOLID._2___OCP.Solucao;
+using Entendimento.SOLID._3___LSP.Solucao;
 using Entendimento.SOLID._4___ISP.Solucao;
 using Entendimento.SOLID._5___DIP.Solucao;
 using Entendimento.SOLID.SRP.Solucao;
@@ -14,7 +14,7 @@ namespace Entendimento.SOLID // Note: actual namespace depends on the project na
             while (running == true)
             {
                 Console.WriteLine("///////////////////////////////////////////////////////////////////////////////////////");
-                Console.WriteLine("// Sobre qual princípio gostaria de ver exemplo?                                        //");
+                Console.WriteLine("// Sobre qual princípio gostaria de ver exemplo?                                     //");
                 Console.WriteLine("// 1 - S — Single Responsiblity Principle (Princípio da responsabilidade única)      //");
                 Console.WriteLine("// 2 - O — Open-Closed Principle (Princípio Aberto-Fechado)                          //");
                 Console.WriteLine("// 3 - L — Liskov Substitution Principle (Princípio da substituição de Liskov)       //");
@@ -23,7 +23,7 @@ namespace Entendimento.SOLID // Note: actual namespace depends on the project na
                 Console.WriteLine("// 6 - Sair                                                                          //");
                 Console.WriteLine("///////////////////////////////////////////////////////////////////////////////////////");
 
-                string option = Console.ReadLine();
+                var option = Console.ReadLine();
 
                 switch (option)
                 {

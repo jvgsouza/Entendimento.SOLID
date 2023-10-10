@@ -9,7 +9,7 @@ Projeto para estudar e aplicar entendimendo ao acrônimo SOLID
 
 - "Objetos ou entidades devem estar abertos para extensão, mas fechados para modificação."
 
-## 03 - LIP (Liskov Substitution Principle)
+## 03 - LSP (Liskov Substitution Principle)
 
 - "Uma classe derivada deve ser substituível por sua classe base."
 

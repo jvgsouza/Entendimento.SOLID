@@ -4,7 +4,7 @@
     {
         public bool ValidarEmail(string email)
         {
-            return email.Contains("@");
+            return email.Contains('@');
         }
 
         public void EnviarEmail(string email)

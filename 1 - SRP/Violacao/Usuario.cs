@@ -5,9 +5,9 @@ namespace Entendimento.SOLID.SRP.Violacao
 {
     public class Usuario
     {
-        public string Email { get; set; }
-        public string Nome { get; set; }
-        public string Senha { get; set; }
+        public string Email { get; set; } = string.Empty;
+        public string Nome { get; set; } = string.Empty;
+        public string Senha { get; set; } = string.Empty;
 
         public string Registrar()
         {
@@ -42,7 +42,7 @@ namespace Entendimento.SOLID.SRP.Violacao
 
         public bool ValidarEmail(string email)
         {
-            return email.Contains("@");
+            return email.Contains('@');
         }
 
         public string EnviarEmail(string email)

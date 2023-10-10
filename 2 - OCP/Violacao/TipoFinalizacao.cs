@@ -1,4 +1,4 @@
-﻿namespace Entendimento.SOLID._2___LSP.Violacao
+﻿namespace Entendimento.SOLID._2___OCP.Violacao
 {
     public enum TipoFinalizacao
     {

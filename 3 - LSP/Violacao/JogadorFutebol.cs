@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace Entendimento.SOLID._3___PSL.Violacao
+﻿namespace Entendimento.SOLID._3___LSP.Violacao
 {
     public class JogadorFutebol : JogadorVoley
     {
-        public string Nome { get; private set; }
-        public string Especializacao { get; private set; }
-        public string Funcao { get; private set; }
+        public new string Nome { get; private set; }
+        public new string Especializacao { get; private set; }
+        public new string Funcao { get; private set; }
 
         public JogadorFutebol(string nome, string especializacao, string funcao) : base(nome, especializacao, funcao)
         {
@@ -15,12 +13,12 @@ namespace Entendimento.SOLID._3___PSL.Violacao
             Funcao = funcao;
         }
 
-        public void Sacar()
+        public static new void Sacar()
         {
             // Não faz nada pois um jogador de futebol não pode sacar a bola
         }
 
-        public void UsarMao()
+        public new void UsarMao()
         {
             if (Funcao != "Goleiro")
                 throw new Exception();

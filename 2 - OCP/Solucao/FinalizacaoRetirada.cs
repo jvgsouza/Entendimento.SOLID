@@ -1,4 +1,4 @@
-﻿namespace Entendimento.SOLID._2___LSP.Solucao
+﻿namespace Entendimento.SOLID._2___OCP.Solucao
 {
     public class FinalizacaoRetirada : IFinalizacao
     {
